@@ -10,21 +10,51 @@
 <body>
     <header>
         <nav>
-        <a href="./index.html" class="logo">
-            <img src="./logo.png" alt="Index Logo">
-        </a>
-            <a href="login.html" id="login-link">Logiyn</a>
+            <a href="./index.html" class="logo">
+                <img src="./logo.png" alt="Index Logo">
+            </a>
+            <a href="login.html" id="login-link">Login</a>
         </nav>
     </header>
     <main>
         <section id="filter">
-            <label for="country-filter">Filter by Country:</label>
-            <select id="country-filter">
-                <!-- Options will be populated dynamically -->
-            </select>
+            <h3>Avalible Places</h3>
+            <div>
+                <label for="country-filter">Filter by Country:</label>
+                <select id="country-filter">
+                    <!-- Options will be populated dynamically -->
+                     <option value="All">All</option>
+                     <option value="UY">UY</option>
+                </select>
+            </div>
         </section>
         <section id="places-list">
             <!-- List of places will be populated dynamically -->
+            <div class="place-card">
+                <!-- <div class="place-image"></div> -->
+                <div class="details-button">
+                    <h3>Beatiful Beach House</h3>
+                    <p> Price per night: $150</p>
+                    <p> Location: Los Angeles, United States</p>
+                    <a href="./place.html">
+                        <button >View Details</button>
+                    </a>
+                </div>
+                <div class="details-button">
+                    <h3>Cozy Cabin</h3>
+                    <p> Price per night: $100</p>
+                    <p> Location: Toronto, Canada</p>
+                    <button>View Details</button>
+
+                </div>
+                <div class="details-button">
+                    <h3>Modern Apartments</h3>
+                    <p> Price per night: $200</p>
+                    <p> Location: New York, United States</p>
+                    <button>View Details</button>
+
+                </div>
+             </div>
         </section>
     </main>
     <footer>
